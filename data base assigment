@@ -1,0 +1,162 @@
+Question 1:what is a database? Explain with an example on why should we need a databse?
+Ans:
+•	A database is a   organized collection of information. without a database, you might keep track of thing like product details and sales In files or spreadsheets. But as shop grows , this gets tricky.
+Why data base is useful:
+No mistake: it helps keep information accurate and right ,for instance it can stop you putting in the wrong stuff.
+Quick searches: you can find things super  fast. want to know which product sold best last month ?easy !
+No mix-ups: If many people are working with the data at the same time . the database makes sure nobody messes things up. Everyone sees the correct information.
+Handles more date : as your shop gets bigger, you’ll have more information to deal with. Database are good at handling 
+Lots of information without showing down.
+Keeps secrets: It lets you decide who can see what. So, if some data is private ,only certain  people can access it.
+
+Question 2): write  a short note on file based storage system. Explain the major challenges of a file based storage system?
+Ans:
+A file-based storage system is a traditional method of managing date  on a computer . in this system ,data is stored  in files, and each files contains information related to a specific task or application .while  file-based storage syetems have been widely used in the past, they come with certain challenges;
+1.Data Redundancy:
+
+In a file-based system, the same data might be duplicated in multiple files. This redundancy  can Lead to inconsistencies and inefficiencies, as changes to one copy of the data may not be reflected in others.
+
+2.Data Isolation:  Each application typically has its own set of files , and sharing data between applications can be  challenging . this isolation can hinder collaboration  and make it difficult to maintain a unified view of the data across the organization .
+3.Limitted data integrity:  file-based system often lack built -in mechanisms to enforce integrity. without proper constraints, there is a risk of entering inaccurate or invalid data, which can  compromise  the reliability of the information  stored .
+
+4.Limitted query capabilities: Retrieving specific  pieces of information from a file-based system can be cumbersome . since the data is not organized in a structured manner ,searching for and  extracting specific data element May require manual  effort and can be time consuming.
+
+5.Concurrency issues:
+In a multi-user environment .where multiple users may access and modify  data simultaneously .file-based system my encounter  concurrency issues, Without  proper mechanisms to manage  concurrent access, conflicts and data inconsistencies may arise. 
+6.Scalability challenges: As the volume of data grows , managing  and scaling  file-based storage system becomes  increasingly complex. performance  may degrade , and it CAN become challenging to handle large dataset efficiently.
+7.Security concerns: file-based system often lack robust security features . controlling access to specific files or ensuring  data privacy can be challenging  without a granular security controls provide by modern  database systems. 
+
+Question3):
+What is DBMS ? what is the need for DBMS?
+ANS : DBMS stands for databased management system .it is software that facilitates the creation , organization retrieval and management of data in a database .A database is a structured  collection of data that is stored and managed in a such way that it can be easily  accessed , updated and controlled.
+The need for DBMS arises from the imitations and challenges associated  wth traditional file-based system .
+HERE ARE SOME REASONS WHY DBMS IS NECESSARY :
+
+1.DATA Integrity and Consistency: In file- based systems ,maintaining data accuracy and consistency was challenging . with multiple copies of the same data stored in different files.it was easy for inconsistencies and errors to accur. DBMS   enforces data integrity rules, ensuring that the data  remains accurate and  consistent.
+2.Data Sharing and Accessibility : File-based system lacked efficient  mechanisms for sharing data between different  applications .DBMS provides  centralized  repository for data .allowing multiple users and  applications to access and share  data in a controlled and secured manner.
+3. Data Independence : DBMS offers a level  of abstraction between the physical  storage of data and the way it is presented to users. This provides  data  independence , allowing changes in the database structure  without  affecting the applications that use the data .
+4.Security and Access Controls :
+DBMS includes features for controlling  access to data . it allows administrators to define user roles and permissions , ensuring that only authorized  users can view or modify certain data.
+5.Scalability:As data volume increases ,DBMS systems are designed to handle large  amounts of data efficiently .this scalability is crucial for growing buissiness and organizations.
+6.Efficient data Retrieving: DBMS provides powerful language that enable users to retrieve specific  pieces of information quickly and efficiently . this is an constrast to file-bases system where data retrieval often required manual searching through files.
+
+7.Data recovery and Backup: DBMS provides mechanisms for data backup and recovery . in the event of a system failure or data loss, organizations can restore  their database to a previous satate .
+
+Question4):explain five challenges of file based storage system which was tackled by DBMS?
+ANS:
+1.	Data redundancy and inconsistency :
+*Challenge in file-based system:
+ in file-based system ,the same data could be duplicated across multiple files. This redundancy lead to inconsistencies and inconsistencies because changes made to one copy of the data might not be reflected in others.
+*How DBMS address it :DBMS  enforces data integrity  rules, helping to eliminate redundancy and ensuring that changes made to a data are consistent across the entire database . this ensures accuracy and coherence in data representation.
+2.Data isolation and inflexibility: 
+*Challenges in file-based system: Each application  in a file-based  system typically had  its own set of  files ,making it difficult to share  data between applications. This isolation hindered  collaboration and made it challenging  to maintain a unified view  of the data .
+*How DBMS addressed it: DBMS provides a centralized  repository  where data can be shared  among multiple applications, it allows for a more  flexible and integrated approach , enabling different  parts of an organization to access and use the same data while maintaining data consistency .
+
+3.Limitted data retrieval capabilities :
+*Challenges in file-based system: Retrieving specific pieces of information from a file-based system was often cumbersome . manual searching  through files was required , leading to inefficiencies and slower  data retrieval.    
+*How DBMS addresses it: DBMS  provides powerful query language that allows users to retrieve  specific  data quickly and efficiently . this structured approach  to data  retrieval  simplifies the process , making  it easier to obtain  the desired information  without  manual efforts.
+4.Concurrency issues : 
+*Challenges in file-based system: In multi -user environment where multiple users could access and modify data simultaneously ,file-based system often faced  concurrency issues. conflict and inconsistencies  could  arise  when  two or more  users  tried  to update the same data  concurrently.
+*How DBMS addresses it: DBMS incorporates  concurrency  control mechanism , such as locking and transaction management , to ensure  that multiple users can work with the data concurrently without introducing  conflict. This helps maintain data consistency in a multi-user environment.
+ 
+ 
+5.Limitted security controls: 
+*Challenges in file-based system often lacked robust  security features , making it challenging  to control  access  to specific  files or ensure data  privacy. Security measures were limited and it was difficult  to implement  fine-gained access  controls.
+*How DBMS addresses it: DBMS provides comprehensive  security  features , allowing administrators  to define  users  roles  and permissions. Access controls  can be implemented at various levels ensuring that only  ensures  data security  within the database.
+
+
+
+Question 5) List out the different types of the classification  in DBMS and explain?
+
+ANS: In database management system (DBMS) ,database can be classified based on different criteria .Here are some common  types of classifications:
+A)	Based on data model: 
+
+1.Relational database: Organized  data into table with rows and columns ,examples include MYSQL, PostgreSQL and Oracle database.
+
+NoSQL database: Do not use the traditional tabular  relational  model. Can be document -oriented , key-value  stores, graph  database etc, ex- include MongoDB,Redis,Neo4j.
+
+
+B)	Based on structured :
+
+a)	Structured databased : Data is organized  in a predefined structure . such as tables in relational database .
+b)	Unstructured database: Data is not organized  in a pre-defined manner , allowing  for flexibility in data storage.
+
+C)	 Based on accessibility: 
+a)	Centralized database: data is stored in a single location and access is controlled from that central point .
+b)	Distributed database: Data is distributed across  multiple locations or servers. Allows for better scalability and fault tolerance.
+
+D)	Based on content:
+
+a)	Document -Oriented database: store data as document (ex= JSON,XML) . suitable  for semi-structured data.
+b)	Graph database: Focus on relationships  between data entities .Suitable for scenarios  involving complex relationships.
+
+E)	Based on applications:
+a)Operational Database: used for day-by-day  operations of an organization . optimized  for read  and write operations. 
+b)Analytical Database: used for complex  queries  and data analysis optimized  for read -intensive  operations.
+
+F)Based on usage:
+
+a)	Online transaction processing database(OTPL):
+
+  Designed for transactional  processing and support 
+high-volume . real-time  transactions.
+b)Online Analytical processing (OLAP)database: Designed for complex queries and reporting supporting data analysis and decision -making.
+
+G)Based on Relationships: 
+a) Relational Database: Represent relationships between data entities using tables and keys.
+b)Hierachical Database: Represent data using  more complex network model . allowing many-to-many relationships.
+
+H)Based on Deployment: 
+ 
+a)	On-premises Database: Installed  and operated from an organization in-house server and computing infrastructure.
+b)	Cloud Database: Hosted an cloud platform providing scalability ,flexibility ,and accessibility from anywhere with on internet connection.
+
+QUESTION6: What is the significance  of data modeling and explain the types of data modelling?
+
+ANS: Data modelling is like creating a blueprint for how data should be organized and used in a database .  that’s why its important and the types of data modelling explained in simple language.
+Significance of Data Modelling:
+*Organization:  Think of data modelling as making a plan before building a house . it helps organize data in a way that makes sense ,like putting  clothes in different drawers  based on type.
+*Clarity: It brings clarity .just like a map helps you find your way . data modelling helps users understand how data relates to each other ,making it easier to use.
+*Efficiency:  When data is well-organized ,it’s  like having things in labeled boxes. You can find what you need quickly ,saving time and effort.
+*Communication: Data modelling helps people working on a project understand each other . it’s like spreading a common language . so everyone knows how to handle and use the data.
+
+   
+ #TYPES OF DATA MODELLING:
+
+1.Conceptual data modelling:
+What it does: its like drawing the big picture before building anything helps to define what kind of information is needed without warrying about the technical details.
+Example: if you’re  planning a trip you’d first decide where you want to go what you want to do.
+B)	Logical Data Modelling : 
+What it does: Now you start figuring out how things will work . it’s like making a detailed plan for  your trip  including places to visit and the rout to take.
+Example: planning the details of your trip -which cities to stop in , where to stay , and how to get there.
+C) Physical Data modelling:
+What it does: its like deciding how to pack for you trip . involves the technical details ,like choosing the right suitcase and organizing your clothes.
+Example: Deciding the specific tools and technologies to use , like deciding to  pack camera for your trip.
+
+QUESTION 7): Explain three schema architecture along with its examples?
+ANS: Imagine you’re building big database for a school. The three schema Architecture helps organize how the database work.
+A)	EXTERNAL SCHEMA:
+What it does: it decides how information looks for different people or apps using the database.
+Example; for students it shows  grades and schedules. For teachers it shows class rosters .
+Why its good; people see only what they need . if you change how things look , it doesn’t mess up the inside of the overall structure.
+B)	conceptual schema:
+ What it does:  it plans hoe all the different info in the database is connected and organized .
+Example: it decides how students classes and teachers are linked together.
+Why it’s good: keeps everything organized , like  a big map how things fit together .changes to how things are organized don’t affect how you see them or how they’re  stored.
+
+C)Internal schema: 
+What it does: Handles the nitty-gritty details of how info stored  and processed  inside  the computer .
+ Example:  Decide how students data is saved on the  computer’s hand drive .
+Why its good: Helps the computer deal with  data efficiency and securely . keeps the data  safe and makes things run faster .
+*ADVANTAGES :
+*Changes without chaos : you can change things look,They’re organized or how they’re stored without messing up everything else.
+*Everyone gets what they need: people op apps see only  what they’re supposed to see.  Students  see grades  teachers see  schedules and nobody sees what they shouldn’t.
+*efficient and structured storage : helps the computer store and manage data in a way that’s fast ,safe, and makes sense for the school.
+
+   
+
+
+
+
+
+
